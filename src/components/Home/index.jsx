@@ -81,7 +81,7 @@ export default function Home(){
                 <a href="https://www.linkedin.com/in/guilherme-manfrin-pereira-4875a2207/" rel="noreferrer" target='_blank'>
                     <FaLinkedin className="linkedin"/>
                 </a>
-                <a href="https://is.gd/4BqrIR" target='_blank' rel="noreferrer">
+                <a href="mailto:manfrin11gui@gmail.com" target='_blank' rel="noreferrer">
                     <FaEnvelopeSquare className="gmail"/>
                 </a>
                 <a href="https://contate.me/gui.manfrin" target='_blank' rel="noreferrer">
