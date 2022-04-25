@@ -194,3 +194,49 @@ export const Redes = styled.div`
         }
     }
 `;
+
+export const Selection = styled.div`
+    width: 85%;
+    height: 40px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+export const ButtonSelection = styled.button`
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    border: 3px solid #FFF;
+    background: linear-gradient(to bottom right, var(--primaryColor) 0%, rgba(2,0,36,1) 100%);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+
+    :hover{
+        font-size: 17px;
+        background: linear-gradient(to bottom right, rgba(2,0,36,1) 0%, var(--primaryColor) 100%);
+    }
+
+    :first-child{
+        border-radius: 10px 0 0 10px;
+    }
+    :last-child{
+        border-radius: 0 10px 10px 0;
+    }
+
+    @media screen and (max-width: 810px){
+        font-size: 14px;
+    }
+    @media screen and (max-width: 600px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 400px){
+        font-size: 10px;
+    }
+`;

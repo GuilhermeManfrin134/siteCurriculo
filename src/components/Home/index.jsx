@@ -1,6 +1,6 @@
 //Importando Componentes de Estilização
-import { Dado, Dados, DadosContainer, DadosLine, Description, 
-    HomeContainer, ImgContainer, NomeCompleto, Redes 
+import { ButtonSelection, Dado, Dados, DadosContainer, DadosLine, Description, 
+    HomeContainer, ImgContainer, NomeCompleto, Redes, Selection 
 } from "./styles";
 
 //Importando Icones
@@ -8,8 +8,30 @@ import { FaEnvelopeSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaWhatsappSq
 
 //Importando Imagens
 import fotoPerfil from '../../assets/Foto_Perfil.jpeg';
+import { useState } from "react";
 
 export default function Home(){
+
+    const [projetos, setProjetos] = useState(true);
+    const [vidaAcademica, setVidaAcademica] = useState(false);
+    const [expProfissional, setExpProfissional] = useState(false);
+
+    function click1(){
+        setProjetos(true);
+        setVidaAcademica(false);
+        setExpProfissional(false);
+    }
+    function click2(){
+        setProjetos(false);
+        setVidaAcademica(true);
+        setExpProfissional(false);
+    }
+    function click3(){
+        setProjetos(false);
+        setVidaAcademica(false);
+        setExpProfissional(true);
+    }
+
     return(
         <HomeContainer>
             <DadosContainer>
@@ -63,6 +85,22 @@ export default function Home(){
                     <FaInstagramSquare className="instagram"/>
                 </a>
             </Redes>
+
+            <Selection>
+                <ButtonSelection onClick={click1}>Projetos</ButtonSelection>
+                <ButtonSelection onClick={click2}>Vida Acadêmica</ButtonSelection>
+                <ButtonSelection onClick={click3}>Experiência Profissional</ButtonSelection>
+            </Selection>
+
+            {
+                projetos && <div>PROJETO</div>
+            }
+            {
+                vidaAcademica && <div>VIDA ACADÊMICA</div>
+            }
+            {
+                expProfissional && <div>EXPERIÊNCIA PROFISSIONAL</div>
+            }
         </HomeContainer>
     )
 }
