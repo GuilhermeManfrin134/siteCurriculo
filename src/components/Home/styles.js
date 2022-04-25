@@ -16,6 +16,9 @@ export const DadosContainer = styled.div`
     justify-content: space-around;
     align-items: center;
 
+    @media screen and (min-width: 1500px){
+        justify-content: center;
+    }
     @media screen and (max-width: 750px){
         flex-direction: column;
     }
@@ -38,6 +41,9 @@ export const ImgContainer = styled.div`
         width: 100%;
     }
 
+    @media screen and (min-width: 1500px){
+        margin-right: 40px;
+    }
     @media screen and (max-width: 750px){
         width: 150px;
         height: 150px;
@@ -51,7 +57,7 @@ export const Dados = styled.div`
     transition: ease-in-out .2s;
     -webkit-transition: ease-in-out .2s;
     -moz-transition: ease-in-out .2s;
-
+    
     @media screen and (max-width: 1200px){
         width: 700px;
     }
