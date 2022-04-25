@@ -1,8 +1,11 @@
+import { useEffect, useState } from 'react';
 
+//Importando API
+import api from '../../services/api';
 
 //Importando Componentes
 import { HomeContainer } from "../Home/styles";
-import { Site, SiteDescription, SiteImg, SiteNome, SitesTitulo, SitesUpados } from "./styles";
+import { Repo, Repos, Site, SiteDescription, SiteImg, SiteNome, SitesTitulo, SitesUpados } from "./styles";
 
 //Imagens Projeto
 import imagemSeleca from '../../assets/bandeiranacionalbrasil.jpg';
@@ -13,6 +16,21 @@ import imagemNetfilmes from '../../assets/NetFilmes.JPG';
 import gifNetfilmes from '../../assets/NetFilmes.gif';
 
 export default function Projetos(){
+
+    const [repo, setRepo] = useState([]);
+
+    useEffect(()=>{
+
+        async function loadRepo(){
+            const response = await api.get('/users/GuilhermeManfrin134/repos');
+
+            setRepo(response.data);
+        }
+
+        loadRepo();
+
+    }, []);
+
     return(
         <HomeContainer>
             <SitesTitulo>
@@ -57,6 +75,19 @@ export default function Projetos(){
                     </a>
                 </Site>
             </SitesUpados>
+
+            <SitesTitulo>Repositórios</SitesTitulo>
+            <Repos>
+                {
+                    repo.map((item, index) => (
+                        <a target='_blank' rel="noreferrer" href={item.html_url} key={index}>
+                            <Repo>
+                                {item.name}
+                            </Repo>
+                        </a>
+                    ))
+                }
+            </Repos>
         </HomeContainer>
     )
 }

@@ -6,7 +6,7 @@ export const SitesTitulo = styled.div`
     font-weight: 800;
     width: 80%;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding-bottom: 5px;
     border-bottom: 2px solid #FFF;
 
@@ -20,8 +20,8 @@ export const SitesUpados = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    margin-bottom: 50px;
+
+    margin-bottom: 20px;
 `;
 
 export const Site = styled.div`
@@ -33,6 +33,7 @@ export const Site = styled.div`
     border: 3px solid #FFF;
     border-radius: 10px;
     background: linear-gradient(to bottom right, var(--primaryColor) 0%, rgba(2,0,36,1) 100%);
+    box-shadow: 2px 2px 5px 3px var(--primaryColor);
 
     @media screen and (max-width: 1200px){
         width: 250px;
@@ -144,5 +145,58 @@ export const SiteDescription = styled.div`
 
     @media screen and (max-width: 1200px){
         font-size: 12px;
+    }
+`;
+
+export const Repos = styled.div`
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    a{
+        cursor: pointer;
+        text-decoration: none;
+
+        @media screen and (max-width: 800px){
+            width: 100%;
+        }
+        
+        :hover{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+        }
+    }
+
+`;
+
+export const Repo = styled.div`
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 700;
+    border-bottom: 3px solid #FFF;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px 3px var(--primaryColor);
+    background: linear-gradient(to bottom right, var(--primaryColor) 0%, rgba(2,0,36,1) 100%);
+
+    @media screen and (max-width: 800px){
+        width: 100%;
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 410px){
+        font-size: 14px;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 10px;
     }
 `;
