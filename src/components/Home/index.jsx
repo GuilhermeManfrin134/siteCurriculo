@@ -1,3 +1,8 @@
+import { useState } from "react";
+
+//Importando Componentes
+import Projetos from "../Projetos";
+
 //Importando Componentes de Estilização
 import { ButtonSelection, Dado, Dados, DadosContainer, DadosLine, Description, 
     HomeContainer, ImgContainer, NomeCompleto, Redes, Selection 
@@ -8,7 +13,8 @@ import { FaEnvelopeSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaWhatsappSq
 
 //Importando Imagens
 import fotoPerfil from '../../assets/Foto_Perfil.jpeg';
-import { useState } from "react";
+import VidaAcademica from "../VidaAcademica";
+import ExpProfissional from "../ExpProfissional";
 
 export default function Home(){
 
@@ -93,13 +99,13 @@ export default function Home(){
             </Selection>
 
             {
-                projetos && <div>PROJETO</div>
+                projetos && <Projetos/>
             }
             {
-                vidaAcademica && <div>VIDA ACADÊMICA</div>
+                vidaAcademica && <VidaAcademica/>
             }
             {
-                expProfissional && <div>EXPERIÊNCIA PROFISSIONAL</div>
+                expProfissional && <ExpProfissional/>
             }
         </HomeContainer>
     )
