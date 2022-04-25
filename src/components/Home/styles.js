@@ -145,20 +145,17 @@ export const Redes = styled.div`
     @media screen and (max-width: 340px){
         justify-content: space-around;
     }
-
+    
     a{
         svg{
-            color: #FFF;
             font-size: 100px;
             cursor: pointer;
 
             transition: ease-in-out .2s;
             -webkit-transition: ease-in-out .2s;
             -moz-transition: ease-in-out .2s;
-        
-            :hover{
-                color: var(--hoverColor);
-            }
+
+            color: #FFF;
 
             @media screen and (max-width: 680px){
                 font-size: 70px;
@@ -168,6 +165,31 @@ export const Redes = styled.div`
             }
             @media screen and (max-width: 340px){
                 font-size: 40px;
+            }
+        }
+        .whatsapp{
+            :hover{
+                color: #25D366;
+            }
+        }
+        .linkedin{
+            :hover{
+                color: #0e76a8;
+            }
+        }
+        .instagram{
+            :hover{
+                color: #E1306C;
+            }
+        }
+        .gmail{
+            :hover{
+                color: #db4a39;
+            }
+        }
+        .github{
+            :hover{
+                color: #171515;
             }
         }
     }

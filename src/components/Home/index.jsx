@@ -48,19 +48,19 @@ export default function Home(){
 
             <Redes>
                 <a href="https://github.com/GuilhermeManfrin134" target='_blank' rel="noreferrer">
-                    <FaGithub />
+                    <FaGithub className="github"/>
                 </a>
                 <a href="https://www.linkedin.com/in/guilherme-manfrin-pereira-4875a2207/" rel="noreferrer" target='_blank'>
-                    <FaLinkedin />
+                    <FaLinkedin className="linkedin"/>
                 </a>
-                <a href="https://criarmeulink.com.br/u/1650852698" target='_blank' rel="noreferrer">
-                    <FaEnvelopeSquare />
+                <a href="https://is.gd/4BqrIR" target='_blank' rel="noreferrer">
+                    <FaEnvelopeSquare className="gmail"/>
                 </a>
                 <a href="https://contate.me/gui.manfrin" target='_blank' rel="noreferrer">
-                    <FaWhatsappSquare />
+                    <FaWhatsappSquare className="whatsapp"/>
                 </a>
                 <a href="https://www.instagram.com/gui.manfrin_134/" target='_blank' rel="noreferrer">
-                    <FaInstagramSquare />
+                    <FaInstagramSquare className="instagram"/>
                 </a>
             </Redes>
         </HomeContainer>
