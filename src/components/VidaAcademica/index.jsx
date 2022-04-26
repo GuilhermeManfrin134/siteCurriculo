@@ -36,7 +36,7 @@ export default function VidaAcademica(){
                 </FormacaoLine>
 
                 <FormacaoTitulo>
-                    Ensino Médio
+                    Ensino Médio Completo
                 </FormacaoTitulo>
                 <FormacaoUniversidade>
                     Escola Estadual Professora Leonor Rendesi
@@ -57,7 +57,7 @@ export default function VidaAcademica(){
                 </FormacaoLine>
 
                 <FormacaoTitulo>
-                    Ensino Fundamental
+                    Ensino Fundamental Completo
                 </FormacaoTitulo>
                 <FormacaoUniversidade>
                     EMEF Marechal Juarez Távora
@@ -77,6 +77,8 @@ export default function VidaAcademica(){
                     </FormacaoUniversidade>
                 </FormacaoLine>
             </Formacao>
+
+            
         </HomeContainer>
     )
 }

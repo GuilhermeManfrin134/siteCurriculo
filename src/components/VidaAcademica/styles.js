@@ -16,14 +16,35 @@ export const Formacao = styled.div`
 export const FormacaoTitulo = styled.div`
     font-size: 25px;
     font-weight: 800;
+
+    @media screen and (max-width: 640px){
+        font-size: 15px;
+    }
+    @media screen and (max-width: 375px){
+        font-size: 13px;
+    }
 `;
 export const FormacaoUniversidade = styled.div`
     font-size: 22px;
     font-weight: 700;
+
+    @media screen and (max-width: 640px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 375px){
+        font-size: 10px;
+    }
 `;
 export const FormacaoDuracao = styled.div`
     font-size: 22px;
     font-weight: 500;
+
+    @media screen and (max-width: 640px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 375px){
+        font-size: 10px;
+    }
 `;
 export const FormacaoLine = styled.div`
     display: flex;
@@ -41,5 +62,15 @@ export const FormacaoLine = styled.div`
     svg{
         font-size: 35px;
         color: #FFF;
+    }
+
+    @media screen and (max-width: 640px){
+        a{
+            margin-right: 5px;
+        }
+
+        svg{
+            font-size: 20px;
+        }
     }
 `;
