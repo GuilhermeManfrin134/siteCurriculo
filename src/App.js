@@ -1,12 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
 
-//Importando Componentes
-import Home from './components/Home';
+//Importando Rotas
+import Routex from './routes';
 
 export default function App() {
   return (
     <BrowserRouter>
-        <Home/>
+        <Routex />
     </BrowserRouter>
   );
 }
