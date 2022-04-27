@@ -1,11 +1,19 @@
 //Importando Componentes de Estilização
 import { HomeContainer } from "../Home/styles";
 import { SitesTitulo } from "../Projetos/styles";
-import { Formacao, FormacaoDuracao, FormacaoLine, FormacaoTitulo, FormacaoUniversidade } from "./styles";
+import { Certificado, Curso, CursoConclusao, CursoLine, CursoLocal, CursoTitulo, Formacao, FormacaoDuracao, FormacaoLine, FormacaoTitulo, FormacaoUniversidade } from "./styles";
 
 //Importando Icons
 import { SiGooglemaps } from 'react-icons/si';
 import { CgWebsite } from 'react-icons/cg';
+
+//Importando Certificados
+import reactCurso from '../../assets/reactCurso.jpg';
+import websites from '../../assets/websites.jpg';
+import logica from '../../assets/logica.jpg';
+import javascript from '../../assets/javascript.jpg';
+import git_github from '../../assets/git-github.jpg';
+import certificado_off from '../../assets/Certificado_Não_Digitalizado.png';
 
 export default function VidaAcademica(){
     return(
@@ -78,7 +86,127 @@ export default function VidaAcademica(){
                 </FormacaoLine>
             </Formacao>
 
-            
+            <SitesTitulo>
+                Cursos Certificados
+            </SitesTitulo>
+            <Curso>
+                    <Certificado>
+                        <img src={reactCurso} alt="Certificado"/>
+                    </Certificado>
+                    <CursoLine>
+                        <CursoTitulo>
+                            React Js do zero ao avançado na prática
+                        </CursoTitulo>
+                        <CursoLocal>
+                            Sujeito Programador - Udemy
+                        </CursoLocal>
+                        <CursoConclusao>
+                            22h - Concluído em 2022
+                        </CursoConclusao>
+                    </CursoLine>
+            </Curso>
+
+            <Curso>
+                <Certificado>
+                    <img src={certificado_off} alt="Certificado"/>
+                </Certificado>
+                <CursoLine>
+                    <CursoTitulo>
+                        Assistente técnico de Hardware e Redes
+                    </CursoTitulo>
+                    <CursoLocal>
+                        Microlins
+                    </CursoLocal>
+                    <CursoConclusao>
+                        Concluído em 2018
+                    </CursoConclusao>
+                </CursoLine>
+            </Curso>
+
+            <Curso>
+                <Certificado>
+                    <img src={certificado_off} alt="Certificado"/>
+                </Certificado>
+                <CursoLine>
+                    <CursoTitulo>
+                        Informática Básica
+                    </CursoTitulo>
+                    <CursoLocal>
+                        Microlins
+                    </CursoLocal>
+                    <CursoConclusao>
+                        Concluído em 2017
+                    </CursoConclusao>
+                </CursoLine>
+            </Curso>
+
+            <Curso>
+                <Certificado>
+                    <img src={git_github} alt="Certificado"/>
+                </Certificado>
+                <CursoLine>
+                    <CursoTitulo>
+                        Introdução ao Git e GitHub
+                    </CursoTitulo>
+                    <CursoLocal>
+                        Digital Innovation One
+                    </CursoLocal>
+                    <CursoConclusao>
+                        Concluído em 2021
+                    </CursoConclusao>
+                </CursoLine>
+            </Curso>
+
+            <Curso>
+                <Certificado>
+                    <img src={logica} alt="Certificado"/>
+                </Certificado>
+                <CursoLine>
+                    <CursoTitulo>
+                        Lógica de programação essencial
+                    </CursoTitulo>
+                    <CursoLocal>
+                        Digital Innovation One
+                    </CursoLocal>
+                    <CursoConclusao>
+                        Concluído em 2021
+                    </CursoConclusao>
+                </CursoLine>
+            </Curso>
+
+            <Curso>
+                <Certificado>
+                    <img src={websites} alt="Certificado"/>
+                </Certificado>
+                <CursoLine>
+                    <CursoTitulo>
+                        Introdução a criação de websites com HTML5 e CSS3
+                    </CursoTitulo>
+                    <CursoLocal>
+                        Digital Innovation One
+                    </CursoLocal>
+                    <CursoConclusao>
+                        Concluído em 2021
+                    </CursoConclusao>
+                </CursoLine>
+            </Curso>
+
+            <Curso>
+                <Certificado>
+                    <img src={javascript} alt="Certificado"/>
+                </Certificado>
+                <CursoLine>
+                    <CursoTitulo>
+                        Programação para Internet com JavaScript
+                    </CursoTitulo>
+                    <CursoLocal>
+                        Digital Innovation One
+                    </CursoLocal>
+                    <CursoConclusao>
+                        Concluído em 2021
+                    </CursoConclusao>
+                </CursoLine>
+            </Curso>
         </HomeContainer>
     )
 }
