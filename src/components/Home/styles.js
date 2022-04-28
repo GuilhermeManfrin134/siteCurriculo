@@ -232,11 +232,23 @@ export const ButtonSelection = styled.button`
 
     @media screen and (max-width: 810px){
         font-size: 14px;
+        :hover{
+            font-size: 13px;
+            background: linear-gradient(to bottom right, rgba(2,0,36,1) 0%, var(--primaryColor) 100%);
+        }
     }
     @media screen and (max-width: 600px){
         font-size: 12px;
+        :hover{
+            font-size: 11px;
+            background: linear-gradient(to bottom right, rgba(2,0,36,1) 0%, var(--primaryColor) 100%);
+        }
     }
     @media screen and (max-width: 400px){
         font-size: 10px;
+        :hover{
+            font-size: 9px;
+            background: linear-gradient(to bottom right, rgba(2,0,36,1) 0%, var(--primaryColor) 100%);
+        }
     }
 `;

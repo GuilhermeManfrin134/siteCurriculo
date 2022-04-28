@@ -41,6 +41,15 @@ export const Site = styled.div`
     @media screen and (max-width: 1100px){
         width: 200px;
     }
+    @media screen and (min-width: 769px){
+        :hover{
+            
+            transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+
+        }
+    }
     @media screen and (max-width: 768px){
         width: 150px;
     }
@@ -61,10 +70,6 @@ export const Site = styled.div`
     }
 
     :hover{
-        transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        -moz-transform: scale(0.9);
-
         .gif{
             display: block;
             height: 100%;
