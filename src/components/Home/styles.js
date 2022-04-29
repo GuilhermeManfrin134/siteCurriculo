@@ -137,7 +137,7 @@ export const Description = styled.div`
 export const Redes = styled.div`
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -147,6 +147,11 @@ export const Redes = styled.div`
     }
     
     a{
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        color: #FFF;
+        
         svg{
             font-size: 100px;
             cursor: pointer;
@@ -165,6 +170,9 @@ export const Redes = styled.div`
             }
             @media screen and (max-width: 340px){
                 font-size: 40px;
+            }
+            @media screen and (max-width: 250px){
+                font-size: 30px;
             }
         }
         .whatsapp{
@@ -190,6 +198,31 @@ export const Redes = styled.div`
         .github{
             :hover{
                 color: #171515;
+            }
+        }
+        .react{
+            :hover{
+                color: #2596be;
+            }
+        }
+        .html{
+            :hover{
+                color: #e54426;
+            }
+        }
+        .css{
+            :hover{
+                color: #2844d7;
+            }
+        }
+        .git{
+            :hover{
+                color: #f25334;
+            }
+        }
+        .javascript{
+            :hover{
+                color: #F1C40F;
             }
         }
     }

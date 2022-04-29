@@ -175,3 +175,18 @@ export const CursoLocal = styled.div`
         font-size: 12px;
     }
 `;
+export const TituloTec = styled.div`
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+
+    @media screen and (max-width: 700px){
+        font-size: 15px;
+    }
+    @media screen and (max-width: 500px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 385px){
+        font-size: 9px;
+    }
+`;

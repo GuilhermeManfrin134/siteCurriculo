@@ -7,14 +7,20 @@ import Projetos from "../Projetos";
 import { ButtonSelection, Dado, Dados, DadosContainer, DadosLine, Description, 
     HomeContainer, ImgContainer, NomeCompleto, Redes, Selection 
 } from "./styles";
+import { SitesTitulo } from "../Projetos/styles";
 
 //Importando Icones
-import { FaEnvelopeSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
+import { 
+    FaEnvelopeSquare, FaGithub, FaInstagramSquare, FaLinkedin, FaWhatsappSquare,
+    FaReact, FaHtml5, FaCss3Alt, FaGitAlt
+} from 'react-icons/fa';
+import { SiJavascript } from "react-icons/si";
 
 //Importando Imagens
 import fotoPerfil from '../../assets/Foto_Perfil.jpeg';
 import VidaAcademica from "../VidaAcademica";
 import ExpProfissional from "../ExpProfissional";
+import { TituloTec } from "../VidaAcademica/styles";
 
 export default function Home(){
 
@@ -89,6 +95,32 @@ export default function Home(){
                 </a>
                 <a href="https://www.instagram.com/gui.manfrin_134/" target='_blank' rel="noreferrer">
                     <FaInstagramSquare className="instagram"/>
+                </a>
+            </Redes>
+
+            <SitesTitulo>
+                Estudo focado nas seguintes Tecnologias
+            </SitesTitulo>
+            <Redes>
+                <a className="react" href="https://pt-br.reactjs.org/" target='_blank' rel="noreferrer">
+                    <FaReact className="react"/>
+                    <TituloTec>React JS</TituloTec>
+                </a>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target='_blank' rel="noreferrer">
+                    <FaHtml5 className="html"/>
+                    <TituloTec>HTML 5</TituloTec>
+                </a>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target='_blank' rel="noreferrer">
+                    <FaCss3Alt className="css"/>
+                    <TituloTec>CSS 3</TituloTec>
+                </a>
+                <a href="https://git-scm.com/" target='_blank' rel="noreferrer">
+                    <FaGitAlt className="git"/>
+                    <TituloTec>Git</TituloTec>
+                </a>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target='_blank' rel="noreferrer">
+                    <SiJavascript className="javascript"/>
+                    <TituloTec>JavaScript</TituloTec>
                 </a>
             </Redes>
 
