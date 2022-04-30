@@ -14,6 +14,27 @@ export const SitesTitulo = styled.div`
     -webkit-transition: ease-in-out .2s;
     -moz-transition: ease-in-out .2s;
 `;
+export const Tecnologias = styled.div`
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FFF;
+
+    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out .2s;
+    -moz-transition: ease-in-out .2s;
+
+    @media screen and (max-width: 600px){
+        font-size: 25px;
+    }
+    @media screen and (max-width: 380px){
+        font-size: 15px;
+    }
+`;
 
 export const SitesUpados = styled.div`
     width: 80%;

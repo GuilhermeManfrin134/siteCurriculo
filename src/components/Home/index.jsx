@@ -7,7 +7,7 @@ import Projetos from "../Projetos";
 import { ButtonSelection, Dado, Dados, DadosContainer, DadosLine, Description, 
     HomeContainer, ImgContainer, NomeCompleto, Redes, Selection 
 } from "./styles";
-import { SitesTitulo } from "../Projetos/styles";
+import { Tecnologias } from "../Projetos/styles";
 
 //Importando Icones
 import { 
@@ -98,9 +98,9 @@ export default function Home(){
                 </a>
             </Redes>
 
-            <SitesTitulo>
+            <Tecnologias>
                 Estudo focado nas seguintes Tecnologias
-            </SitesTitulo>
+            </Tecnologias>
             <Redes>
                 <a className="react" href="https://pt-br.reactjs.org/" target='_blank' rel="noreferrer">
                     <FaReact className="react"/>
